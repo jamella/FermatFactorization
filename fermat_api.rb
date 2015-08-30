@@ -44,7 +44,9 @@ class FermatExp
       a += 1
       b2 = a*a - @N
     end
-    return (a - SqrtInt.sqrt(b2)), (a + SqrtInt.sqrt(b2))
+    p = (a - SqrtInt.sqrt(b2)
+    q = (a + SqrtInt.sqrt(b2)
+    return  p,q if p*q==@N
   end
 end
 

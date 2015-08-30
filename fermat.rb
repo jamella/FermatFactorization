@@ -73,11 +73,14 @@ class FermatExp
       a += 1
       b2 = a*a - @N
     end
-    return (a - SqrtInt.sqrt(b2)), (a + SqrtInt.sqrt(b2))
+    p = (a - SqrtInt.sqrt(b2))
+    q = (a + SqrtInt.sqrt(b2))
+    return p,q if @N == p*q
   end
 end
 
 opts = ARGVParser.new.options
 p, q = FermatExp.new(opts[:n].to_i).exploit
+
 puts "p = #{p}"
 puts "q = #{q}"
