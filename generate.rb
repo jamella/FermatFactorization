@@ -27,4 +27,4 @@ class Gen
   end
 end
 
-p Gen.new(512).pxq
+p Gen.new(2048).pxq
