@@ -1,5 +1,5 @@
 # FermatFactorization
-Factor N = pq when p is too close to p
+Factor N = pq when p is too close to q
 
 [Fermat's Factorization Method](https://en.wikipedia.org/wiki/Fermat's_factorization_method)
 
